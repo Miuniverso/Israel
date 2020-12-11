@@ -1,17 +1,44 @@
 @font-face {
-  font-family: "Roboto";
+  font-weight: 700;
+  font-family: "FiraSans";
   font-style: normal;
-  font-weight: 400;
+  src: url("../fonts/FiraSans-Bold.woff2") format("woff2"),
+    url("../fonts/FiraSans-Bold.woff") format("woff");
   font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-    url("../fonts/Roboto-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-weight: 500;
+  font-family: "FiraSans";
   font-style: normal;
-  font-weight: 300;
+  src: url("../fonts/FiraSans-Medium.woff2") format("woff2"),
+    url("../fonts/FiraSans-Medium.woff") format("woff");
   font-display: swap;
-  src: url("../fonts/Roboto-Light.woff2") format("woff2"),
-    url("../fonts/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "FiraSans";
+  font-style: normal;
+  src: url("../fonts/FiraSans-Regular.woff2") format("woff2"),
+    url("../fonts/FiraSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "Raleway";
+  font-style: normal;
+  src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Raleway-ExtraBold.woff") format("woff");
+  font-display: swap;
 }

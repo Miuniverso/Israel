@@ -1,11 +1,3 @@
-html {
-  box-sizing: border-box;
-  position: relative;
-
-  scroll-behavior: smooth;
-
-  height: 100%;
-}
 
 *,
 *::before,
@@ -41,30 +33,30 @@ body {
   font-family: $font-primary;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.swiper-container {
-  width: 991px;
-  height: 528px;
-}
-
-@media (max-width: $desktop) {
-  .swiper-container {
-    width: 568px;
-    height: 496px;
-  }
-}
-
-@media (max-width: $tablet) {
-  .swiper-container {
-    width: 160px;
-    height: 232px;
-  }
-}
+// .no-scroll {
+//   overflow: hidden;
+// }
+//
+// .container {
+//   max-width: 1440px;
+//   margin: 0 auto;
+// }
+//
+// .swiper-container {
+//   width: 991px;
+//   height: 528px;
+// }
+//
+// @media (max-width: $desktop) {
+//   .swiper-container {
+//     width: 568px;
+//     height: 496px;
+//   }
+// }
+//
+// @media (max-width: $tablet) {
+//   .swiper-container {
+//     width: 160px;
+//     height: 232px;
+//   }
+// }
