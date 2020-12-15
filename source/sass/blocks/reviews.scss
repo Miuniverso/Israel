@@ -1,0 +1,191 @@
+.reviews {
+  background-image: url("../img/rewiews_sketch@1x.png");
+  background-size: 31%;
+  background-repeat: no-repeat;
+  background-position: top 43px right;
+}
+
+.reviews__title {
+  @include title;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 26px;
+}
+
+.rewiews__container {
+  max-width: 1171px;
+}
+
+.reviews__wrapper {
+  display: flex;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.reviews__photo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.reviews__text {
+  margin-left: 41px;
+}
+
+.reviews__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: $black;
+  opacity: 0.7;
+
+  margin: 0;
+  margin-top: 48px;
+}
+
+.reviews__programm {
+  margin: 0;
+  margin-top: 9px;
+  margin-bottom: 31px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+
+  color: #484848;
+  opacity: 0.7;
+
+  span {
+    color: $blue;
+    margin-right: 8px;
+  }
+}
+
+.reviews__comment {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+
+  color: $black;
+  opacity: 0.7;
+
+  max-width: 675px;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+
+.reviews__more {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+
+  text-decoration-line: underline;
+  color: $blue;
+}
+
+.reviews__social {
+  margin: 0;
+  margin-top: 56px;
+  margin-right: -2px;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.reviews__icon path {
+  fill: rgba(72, 72, 72, 0.3);
+
+  &:hover {
+    fill: $blue;
+  }
+}
+
+.reviews__social-item  {
+
+  &:not(:first-child) {
+  margin-left: 18px;
+  }
+}
+
+.reviews__pagination {
+  position: absolute;
+  bottom: 24px;
+  left: 34.7%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+
+  color: $black;
+  opacity: 0.5;
+}
+
+// .reviews .reviews__wrapper .reviews__next,
+// .reviews .reviews__wrapper .reviews__prev {
+//   position: absolute;
+//   bottom: 24px;
+//   top: auto;
+//   border: none;
+//   outline: none;
+//   background-color: transparent;
+//
+//   cursor: pointer;
+//
+//   &:after {
+//     font-size: 0;
+//   }
+// }
+
+.reviews .reviews__prev {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  bottom: 13px;
+  top: auto;
+  left: 43%;
+
+  &:after {
+      font-size: 0;
+    }
+}
+
+.reviews .reviews__next {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  bottom: 13px;
+  top: auto;
+  left: 44.5%;
+
+  &:after {
+      font-size: 0;
+    }
+}
+
+.reviews .reviews__prev svg {
+  transform: rotate(180deg);
+}

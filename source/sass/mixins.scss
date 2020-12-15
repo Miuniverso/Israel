@@ -1,0 +1,12 @@
+@mixin title {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: $blue;
+}

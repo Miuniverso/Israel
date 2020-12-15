@@ -1,3 +1,18 @@
-h1 {
-  color: red;
-}
+@import "./normalize";
+@import "./typography.scss";
+@import "./variables.scss";
+@import "./global.scss";
+@import "./mixins.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/about.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/tabs.scss";
+@import "./blocks/panels.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/tactic.scss";
+@import "./blocks/life.scss";
+@import "./blocks/masaisrael.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/reviews.scss";

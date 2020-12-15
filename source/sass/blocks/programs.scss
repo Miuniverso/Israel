@@ -1,0 +1,31 @@
+.programs {
+  // padding-top: 197px;
+  margin-top: -5px;
+  background-image: url("../img/programming_bg@1x.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.programs__title {
+  @include title;
+
+  max-width: 945px;
+  margin: 0 auto;
+}
+
+.programs__wrapper {
+  max-width: 947px;
+  margin: 0 auto;
+  margin-top: 90px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.programs__panels {
+  max-width: 69%;
+}
+
+.programs__input {
+  display: none;
+}
