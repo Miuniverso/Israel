@@ -29,3 +29,41 @@
 .programs__input {
   display: none;
 }
+
+@media (max-width: $desktop) {
+  .programs {
+    padding: 0 50px;
+  }
+
+  .programs__wrapper {
+    max-width: 100%;
+  }
+
+  .programs__panels {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .programs {
+    padding: 0;
+    background-position: top 126px right -33px;
+    background-size: 108%;
+  }
+
+  .programs__title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .programs__wrapper {
+    flex-direction: column;
+    margin-top: 36px;
+  }
+
+  .programs__panels {
+    max-width: 100%;
+    padding: 0 16px;
+    margin-top: 32px;
+  }
+}

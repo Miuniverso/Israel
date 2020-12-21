@@ -43,10 +43,46 @@
   position: relative;
 }
 
+.life__image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  &--tours {
+    background-image: url("../img/temple@1x.png");
+    max-width: 482px;
+    min-height: 732px;
+  }
+
+  &--language {
+    background-image: url("../img/language@1x.png");
+    min-width: 211px;
+    min-height: 318px;
+  }
+
+  &--education {
+    background-image: url("../img/learn@1x.png");
+    min-width: 411px;
+    min-height: 318px;
+  }
+
+  &--creation {
+    background-image: url("../img/people@1x.png");
+    min-width: 411px;
+    min-height: 318px;
+  }
+
+  &--leader {
+    background-image: url("../img/leader@1x.png");
+    min-width: 211px;
+    min-height: 318px;
+  }
+}
+
 .life__gallery-big .life__text {
-  margin-left: 40px;
+  margin-left: 36px;
   max-width: 342px;
-  bottom: 50px;
+  bottom: 33px;
 }
 
 .life__gallery-small {
@@ -70,7 +106,7 @@
 
 .life__text {
   position: absolute;
-  bottom: 36px;
+  bottom: 31px;
 
   font-family: $font-secondary;
   font-style: normal;
@@ -91,4 +127,63 @@
   &--big {
     left: 23px;
   }
+}
+
+@media (max-width: $desktop) {
+  .life__title {
+    font-size: 32px;
+  }
+
+  .life__text {
+    font-size: 17px;
+  }
+
+  .life__gallery-big .life__text {
+    margin-left: 29px;
+    bottom: 80px;
+  }
+
+  // .life__gallery-wrapper {
+  //   flex-wrap: wrap;
+  // }
+
+  .life__gallery-big {
+    width: 100%;
+  }
+
+  .life__gallery-small {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .life__image {
+    width: 100%;
+    min-width: 500px;
+    min-height: 700px;
+    background-size: cover;
+
+    &--tours {
+
+    }
+
+    &--language {
+
+    }
+
+    &--education {
+
+    }
+
+    &--creation {
+
+    }
+
+    &--leader {
+
+    }
+  }
+
+  // .life__gallery-row {
+  //   flex-direction: column;
+  // }
 }

@@ -51,7 +51,23 @@
 }
 
 label[for="fullinfo"] span::before {
-  background-image: url("../../img/icon-star.svg");
+  background-image: url("../img/icon-star-black.svg");
+}
+
+label[for="academy"] span::before {
+  background-image: url("../img/icon-academy-black.svg");
+}
+
+label[for="internship"] span::before {
+  background-image: url("../img/icon-bag-black.svg");
+}
+
+label[for="volunteering"] span::before {
+  background-image: url("../img/icon-love-black.svg");
+}
+
+label[for="religion"] span::before {
+  background-image: url("../img/icon-staff-black.svg");
 }
 
 #fullinfo:checked ~ .programs__panels .fullinfo-panel,
@@ -67,8 +83,80 @@ label[for="fullinfo"] span::before {
 #internship:checked ~ .tabs .internship-tab,
 #volunteering:checked ~ .tabs .volunteering-tab,
 #religion:checked ~ .tabs .religion-tab {
-  background: $gradient;
+  background-image: url("../img/icon-tab-active.svg");
+  background-repeat: no-repeat;
   text-transform: uppercase;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   color: $white;
+}
+
+.tabs__item:hover .tabs__name {
+  color: $yellow;
+}
+
+.tabs__item-wrapper:hover {
+
+    .tabs__item--fullinfo span::before {
+      background-image: url("../img/icon-star-yellow.svg");
+    }
+
+    .tabs__item-academy span::before {
+      background-image: url("../img/icon-academy-yellow.svg");
+    }
+
+    .tabs__item-internship span::before {
+      background-image: url("../img/icon-bag-yellow.svg");
+    }
+
+    .tabs__item-volunteering span:before {
+      background-image: url("../img/icon-love-yellow.svg");
+    }
+
+    .tabs__item--religion span:before {
+      background-image: url("../img/icon-staff-yellow.svg");
+    }
+}
+
+#fullinfo:checked ~ .fullinfo-tab span::before {
+  background-image: url("../img/icon-star-white.svg");
+}
+
+#academy:checked ~ .tabs .academy-tab span::before {
+  background-image: url("../img/icon-hat-white.svg");
+}
+
+#internship:checked ~ .tabs .internship-tab span::before {
+  background-image: url("../img/icon-bag-white.svg");
+}
+
+#volunteering:checked ~ .tabs .volunteering-tab span::before {
+  background-image: url("../img/icon-love-white.svg");
+}
+
+#religion:checked ~ .tabs .religion-tab span::before {
+  background-image: url("../img/icon-staff-white.svg");
+}
+
+@media (max-width: $tablet) {
+  .tabs {
+    flex-direction: row;
+  }
+
+  .tabs__item {
+    width: 181px;
+    height: 48px;
+  }
+
+  #fullinfo:checked ~ .tabs .fullinfo-tab,
+  #academy:checked ~ .tabs .academy-tab,
+  #internship:checked ~ .tabs .internship-tab,
+  #volunteering:checked ~ .tabs .volunteering-tab,
+  #religion:checked ~ .tabs .religion-tab {
+    background-image: none;
+    background: $gradient;
+    border-radius: 60px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

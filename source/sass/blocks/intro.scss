@@ -1,5 +1,14 @@
 .intro {
   position: relative;
+
+  background-image: url("../../img/intro@1x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  max-width: 1366px;
+  width: 100%;
+  min-height: 908px;
 }
 
 .intro__text {
@@ -25,4 +34,37 @@
   width: 76px;
   height: 132px;
   background-image: url("../img/scroll.svg");
+}
+
+@media (max-width: $desktop) {
+  .intro {
+    min-height: 680px;
+  }
+
+  .intro__text {
+    font-size: 20px;
+  }
+
+  .intro__img {
+  }
+}
+
+@media (max-width: $tablet) {
+  .intro {
+    background-image: url("../img/intro-mobile@1x.png");
+    background-size: 100%;
+    background-position: center 32px;
+
+    min-height: 620px;
+  }
+
+  .intro__text {
+    font-size: 20px;
+    line-height: 24px;
+    bottom: 217px;
+  }
+
+  .intro__scroll {
+    bottom: 73px;
+  }
 }

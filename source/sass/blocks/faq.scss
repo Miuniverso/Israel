@@ -134,3 +134,30 @@
 
   transition: .3s;
 }
+
+@media (max-width: $desktop) {
+  .faq__wrapper {
+    margin-top: 0;
+    padding: 0 40px;
+
+    // background-size: contain;
+    background-image: none;
+  }
+
+  .faq__title {
+    font-size: 32px;
+  }
+
+  .faq__list-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .faq__img {
+    display: none;
+  }
+
+  .faq__quastion::before {
+    top: -11px;
+  }
+}

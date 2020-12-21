@@ -57,3 +57,14 @@
     background: $yellow;
   }
 }
+
+@media (max-width: $desktop) {
+  .feedback {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+
+    background-position: top 36% right -2%;
+    background-size: 62%;
+  }
+}

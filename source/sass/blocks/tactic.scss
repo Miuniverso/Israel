@@ -156,3 +156,24 @@
     top: -2px;
   }
 }
+
+@media (max-width: $desktop) {
+  .tactic {
+    padding-top: 40px;
+    padding-bottom: 200px;
+  }
+
+  .tactic__title {
+    font-size: 32px;
+  }
+
+  .tactic__img {
+    margin-left: 0;
+    margin-top: 170px;
+    width: 46%;
+  }
+
+  .tactic__item {
+    margin-bottom: 35px;
+  }
+}

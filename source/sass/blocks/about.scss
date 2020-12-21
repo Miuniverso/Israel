@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 206px;
 }
 
 .about__title {
@@ -32,7 +32,7 @@
   text-align: center;
   color: $black;
 
-  max-width: 43%;
+  max-width: 38%;
   margin: 0 auto;
   margin-top: 24px;
 }
@@ -40,7 +40,12 @@
 .about__video {
   position: relative;
   margin-top: 48px;
-  max-width: 870px;
+  min-width: 870px;
+  min-height: 460px;
+
+  background-image: url("../img/about_video@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about__play {
@@ -57,4 +62,51 @@
 
 .about__play:hover svg path {
   fill: $yellow;
+}
+
+@media (max-width: $desktop) {
+  .about {
+    padding-bottom: 100px;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .about__subtitle {
+    max-width: 95%;
+  }
+
+  .about__video {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: $tablet) {
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .about__title {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .about__subtitle {
+    max-width: 90%;
+    margin-top: 17px;
+
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about__video {
+    width: 100%;
+    min-width: auto;
+    background-image: url("../img/about_video-mobile@1x.png");
+    min-height: 224px;
+    margin-top: 47px;
+  }
 }

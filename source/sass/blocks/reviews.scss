@@ -13,7 +13,7 @@
   margin-top: 26px;
 }
 
-.rewiews__container {
+.reviews__container {
   max-width: 1171px;
 }
 
@@ -122,10 +122,10 @@
   }
 }
 
-.reviews__pagination {
+.reviews .reviews__pagination {
   position: absolute;
+  left: 34.5%;
   bottom: 24px;
-  left: 34.7%;
 
   font-style: normal;
   font-weight: normal;
@@ -134,23 +134,9 @@
 
   color: $black;
   opacity: 0.5;
-}
 
-// .reviews .reviews__wrapper .reviews__next,
-// .reviews .reviews__wrapper .reviews__prev {
-//   position: absolute;
-//   bottom: 24px;
-//   top: auto;
-//   border: none;
-//   outline: none;
-//   background-color: transparent;
-//
-//   cursor: pointer;
-//
-//   &:after {
-//     font-size: 0;
-//   }
-// }
+  cursor: pointer;
+}
 
 .reviews .reviews__prev {
   position: absolute;
@@ -160,9 +146,9 @@
 
   cursor: pointer;
 
-  bottom: 13px;
+  bottom: 22px;
   top: auto;
-  left: 43%;
+  left: 39%;
 
   &:after {
       font-size: 0;
@@ -177,9 +163,9 @@
 
   cursor: pointer;
 
-  bottom: 13px;
+  bottom: 22px;
   top: auto;
-  left: 44.5%;
+  left: 41.5%;
 
   &:after {
       font-size: 0;
@@ -188,4 +174,42 @@
 
 .reviews .reviews__prev svg {
   transform: rotate(180deg);
+}
+
+@media (max-width: $desktop) {
+  .reviews__title {
+    font-size: 32px;
+  }
+
+  .reviews__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__photo {
+    width: 40%;
+  }
+
+  .reviews__programm {
+    font-size: 14px;
+  }
+
+  .reviews__comment {
+    font-size: 16px;
+  }
+
+  .reviews__more {
+    font-size: 16px;
+  }
+
+  .reviews__social {
+    margin-right: 0;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    top: 0;
+  }
 }

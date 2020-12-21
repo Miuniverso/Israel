@@ -31,3 +31,18 @@
     margin-bottom: 15px;
   }
 }
+
+@media (max-width: $tablet) {
+  .panels__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: -5px;
+    margin-bottom: 16px;
+  }
+
+  .panels__text {
+    max-width: 99%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
