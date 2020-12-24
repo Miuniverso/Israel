@@ -374,6 +374,9 @@ body {
   position: relative;
   font-family: "FiraSans", "Arial", sans-serif; }
 
+.no-scroll {
+  overflow: hidden; }
+
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -886,6 +889,10 @@ label[for="religion"] span::before {
     padding-bottom: 50px;
     background-position: top 36% right -2%;
     background-size: 62%; } }
+
+@media (max-width: 767px) {
+  .feedback__title {
+    font-size: 32px; } }
 
 .tactic {
   display: -webkit-box;
@@ -1833,6 +1840,29 @@ label[for="religion"] span::before {
   .contacts__feedback-form form > * {
     width: 30%; } }
 
+@media (max-width: 767px) {
+  .contacts__curator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .contacts__feedback-form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contacts__feedback-form form > * {
+    width: 100%; }
+  .contacts input {
+    width: 100%; }
+  .contacts__feedback-name {
+    margin-bottom: 10px; }
+  .contacts__feedback-btn {
+    margin-top: 20px; } }
+
 .main-footer {
   border-top: 1px solid rgba(72, 72, 72, 0.2); }
 
@@ -1894,6 +1924,12 @@ label[for="religion"] span::before {
 .popup__overlay {
   background: #EBEBEB;
   opacity: 0.95; }
+
+.popup .popup__overlay .visible {
+  display: block; }
+
+body .popup .visible {
+  display: block; }
 
 .popup__wrapper {
   position: relative;
@@ -2019,7 +2055,8 @@ label[for="religion"] span::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  margin-top: 18px; }
 
 .popup-checkbox label {
   font-style: normal;
@@ -2027,7 +2064,7 @@ label[for="religion"] span::before {
   font-size: 13px;
   line-height: 19px;
   color: rgba(72, 72, 72, 0.8);
-  padding-left: 30px; }
+  margin-left: 30px; }
 
 .popup__checkbox input:checked,
 .popup__checkbox input:not(:checked) {

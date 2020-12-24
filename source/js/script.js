@@ -12,3 +12,21 @@ Array.from(faqTitle).forEach(function(item, i, faqTitle) {
     this.classList.toggle('faq__item--open');
   });
 });
+
+var popupBtn = document.querySelector(".main-nav__link--popup");
+var popupWrapper = document.querySelector(".popup");
+var overlay = document.querySelector(".popup__overlay");
+var body = document.querySelector("body");
+
+popupBtn.addEventListener("click", function() {
+  popupWrapper.style.display = "block";
+  // popupWrapper.classList.toggle("visible");
+  overlay.classList.add("visible");
+})
+
+var close = document.querySelector(".popup__close");
+
+close.addEventListener("click", function() {
+  popupWrapper.style.display = "none";
+  overlay.classList.remove("visible");
+})

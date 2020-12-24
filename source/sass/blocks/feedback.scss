@@ -68,3 +68,9 @@
     background-size: 62%;
   }
 }
+
+@media (max-width: $tablet) {
+  .feedback__title {
+    font-size: 32px;
+  }
+}

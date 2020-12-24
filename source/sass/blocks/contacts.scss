@@ -304,9 +304,34 @@
     flex-direction: column;
   }
 
-  // .contacts__feedback-form form
-
   .contacts__feedback-form form > * {
     width: 30%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .contacts__curator {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts__feedback-form form {
+    flex-direction: column;
+  }
+
+  .contacts__feedback-form form > * {
+    width: 100%;
+  }
+
+  .contacts input {
+    width: 100%;
+  }
+
+  .contacts__feedback-name {
+    margin-bottom: 10px;
+  }
+
+  .contacts__feedback-btn {
+    margin-top: 20px;
   }
 }
